@@ -43,8 +43,8 @@
               <span title="Ark">Ark</span>
               <span>{{islandHasArk}}</span>
 
-              <Icon size="20" name="material-symbols:altitude" :title="'Altitude'" />
-              <span>{{islandDetails.altitude || "Unknown"}}</span>
+              <Icon v-if="islandDetails.altitude" size="20" name="material-symbols:altitude" :title="'Altitude'" />
+              <span v-if="islandDetails.altitude">{{islandDetails.altitude}}</span>
 
               <Icon size="20" name="material-symbols-light:swords" :title="'Difficulty'" />
               <span>{{islandDetails.difficulty || "Unknown"}}</span>
