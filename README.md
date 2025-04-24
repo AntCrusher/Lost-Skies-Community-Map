@@ -6,7 +6,7 @@ This is just a simple Nuxt application based on https://fancyapps.com/panzoom/ t
 
 Thank you to NoxX, Cailco and the community for providing the map itself.
 
-The interactive map can be found here: https://automaticpotato.github.io/found-skies/
+The interactive map can be found here: https://antcrusher.github.io/Lost-Skies-Community-Map/
 
 
 ## How to run
@@ -14,7 +14,7 @@ The interactive map can be found here: https://automaticpotato.github.io/found-s
 The application is a nuxt app. Simply clone the repo
 
 ```bash
-git clone https://github.com/AutomaticPotato/found-skies.git
+git clone https://github.com/AntCrusher/Lost-Skies-Community-Map.git
 ```
 
 install the dependencies
