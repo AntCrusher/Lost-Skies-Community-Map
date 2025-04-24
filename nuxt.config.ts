@@ -18,6 +18,6 @@ export default defineNuxtConfig({
     '@nuxt/ui'
   ],
   app: {
-    baseURL: "/found-skies/"
+    baseURL: "/Lost-Skies-Community-Map/"
   }
 })
