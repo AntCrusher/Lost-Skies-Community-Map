@@ -1,1 +1,5 @@
 @import "tailwindcss";
+
+.f-panzoom {
+    background-color: #1d1e1e !important;
+}

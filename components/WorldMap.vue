@@ -5,7 +5,7 @@ import {islandData} from "~/data/islandData";
 
 const options = {
   initialSize: "fit",
-  maxScale: 10,
+  maxScale: 25,
   click: false,
 };
 

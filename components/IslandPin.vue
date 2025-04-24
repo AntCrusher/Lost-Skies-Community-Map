@@ -29,9 +29,7 @@
           </template>
 
           <template #default>
-            <div class="grid grid-cols-[auto_1fr] items-center gap-3 mt-3 max-w-sm break-words">
-              <Icon size="20" name="material-symbols:altitude" :title="'Altitude'" />
-              <span>{{islandDetails.altitude || "Unknown"}}</span>
+            <div class="grid grid-cols-[auto_1fr] items-center gap-1 mt-2 max-w-sm break-words">
 
               <!-- <span title="X Coordinate">X</span>
               <span>{{islandDetails.xCoordinate || "Unknown"}}</span>
@@ -39,14 +37,17 @@
               <span title="Y Coordinate">Y</span>
               <span>{{islandDetails.yCoordinate || "Unknown"}}</span> -->
 
-              <Icon size="20" name="material-symbols-light:swords" :title="'Difficulty'" />
-              <span>{{islandDetails.difficulty || "Unknown"}}</span>
+              <Icon size="20" name="game-icons:brain" :title="'Databanks'" />
+              <span>{{islandDetails.databanks || "Unknown"}}</span>
 
               <span title="Ark">Ark</span>
               <span>{{islandHasArk}}</span>
 
-              <Icon size="20" name="game-icons:brain" :title="'Databanks'" />
-              <span>{{islandDetails.databanks || "Unknown"}}</span>
+              <Icon size="20" name="material-symbols:altitude" :title="'Altitude'" />
+              <span>{{islandDetails.altitude || "Unknown"}}</span>
+
+              <Icon size="20" name="material-symbols-light:swords" :title="'Difficulty'" />
+              <span>{{islandDetails.difficulty || "Unknown"}}</span>
 
               <Icon size="20" name="mdi:pickaxe" :title="'Metals'" />
               <span>{{islandDetails.metals?.join(', ') || "Unknown"}}</span>

@@ -1,7 +1,7 @@
 export type IslandDetails = {
     name: string,
     id: number,
-    amountOfKnowledgeNodes?: number
+    databanks?: number
     xCoordinate?: number
     yCoordinate?: number
     xPercentage?: number
@@ -9,5 +9,11 @@ export type IslandDetails = {
     altitude?: number
     difficulty?: number
     ark?: boolean,
+    metals?: string[],
+    wood: string[],
+    plants: string[],
+    items: string[],
+    animals: string[],
+    chestItems: string[],
     note?: string
 }
