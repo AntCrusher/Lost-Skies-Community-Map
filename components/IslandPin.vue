@@ -37,34 +37,34 @@
               <span title="Y Coordinate">Y</span>
               <span>{{islandDetails.yCoordinate || "Unknown"}}</span> -->
 
-              <Icon size="20" name="game-icons:brain" :title="'Databanks'" />
+              <span title="Databanks">Databanks:</span>
               <span>{{islandDetails.databanks || "Unknown"}}</span>
 
-              <span title="Ark">Ark</span>
+              <span title="Ark">Ark:</span>
               <span>{{islandHasArk}}</span>
 
-              <Icon size="20" name="material-symbols:altitude" :title="'Altitude'" />
+              <span title="Altitude">Altitude:</span>
               <span>{{islandDetails.altitude || "Unknown"}}</span>
 
-              <Icon size="20" name="material-symbols-light:swords" :title="'Difficulty'" />
+              <span title="Difficulty">Difficulty:</span>
               <span>{{islandDetails.difficulty || "Unknown"}}</span>
 
-              <Icon size="20" name="mdi:pickaxe" :title="'Metals'" />
+              <span title="Metals">Metals:</span>
               <span>{{islandDetails.metals?.join(', ') || "Unknown"}}</span>
 
-              <Icon size="20" name="mdi:tree" :title="'Wood'" />
+              <span title="Wood">Wood:</span>
               <span>{{islandDetails.wood?.join(', ') || "Unknown"}}</span>
 
-              <Icon size="20" name="mdi:leaf" :title="'Plants'" />
+              <span title="Plants">Plants:</span>
               <span>{{islandDetails.plants?.join(', ') || "Unknown"}}</span>
 
-              <Icon size="20" name="mdi:package-variant" :title="'Items'" />
+              <span title="Items">Items:</span>
               <span>{{islandDetails.items?.join(', ') || "Unknown"}}</span>
 
-              <Icon size="20" name="mdi:paw" :title="'Animals'" />
+              <span title="Animals">Animals:</span>
               <span>{{islandDetails.animals?.join(', ') || "Unknown"}}</span>
 
-              <Icon size="20" name="mdi:treasure-chest" :title="'Chest Items'" />
+              <span title="Chest Items">Chest Items:</span>
               <span>{{islandDetails.chestItems?.join(', ') || "Unknown"}}</span>
             </div>
           </template>
