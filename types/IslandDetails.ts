@@ -9,7 +9,7 @@ export type IslandDetails = {
     altitude?: number
     difficulty?: number
     ark?: boolean,
-    metals?: string[],
+    metals: string[],
     wood: string[],
     plants: string[],
     items: string[],

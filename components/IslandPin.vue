@@ -37,35 +37,35 @@
               <span title="Y Coordinate">Y</span>
               <span>{{islandDetails.yCoordinate || "Unknown"}}</span> -->
 
-              <Icon size="20" name="game-icons:brain" :title="'Databanks'" />
+              <img src="/icons/brain.svg" :title="'Databanks'" class="size-5" />
               <span>{{islandDetails.databanks || "Unknown"}}</span>
 
               <span title="Ark">Ark</span>
               <span>{{islandHasArk}}</span>
 
-              <Icon size="20" name="material-symbols:altitude" :title="'Altitude'" />
+              <img src="/icons/altitude.svg" :title="'Altitude'" class="size-5" />
               <span>{{islandDetails.altitude || "Unknown"}}</span>
 
-              <Icon size="20" name="material-symbols-light:swords" :title="'Difficulty'" />
+              <img src="/icons/swords.svg" :title="'Difficulty'" class="size-5" />
               <span>{{islandDetails.difficulty || "Unknown"}}</span>
 
-              <Icon size="20" name="mdi:pickaxe" :title="'Metals'" />
-              <span>{{islandDetails.metals?.join(', ') || "Unknown"}}</span>
+              <img v-if="islandDetails.metals?.length > 0" src="/icons/pickaxe.svg" :title="'Metals'" class="size-5" />
+              <span v-if="islandDetails.metals?.length > 0">{{islandDetails.metals?.join(',')}}</span>
 
-              <Icon size="20" name="mdi:tree" :title="'Wood'" />
-              <span>{{islandDetails.wood?.join(', ') || "Unknown"}}</span>
+              <img v-if="islandDetails.wood?.length > 0" src="/icons/tree.svg" :title="'Wood Types'" class="size-5" />
+              <span v-if="islandDetails.wood?.length > 0">{{islandDetails.wood?.join(',')}}</span>
 
-              <Icon size="20" name="mdi:leaf" :title="'Plants'" />
-              <span>{{islandDetails.plants?.join(', ') || "Unknown"}}</span>
+              <img v-if="islandDetails.plants?.length > 0" src="/icons/leaf.svg" :title="'Plants'" class="size-5" />
+              <span v-if="islandDetails.plants?.length > 0">{{islandDetails.plants?.join(',')}}</span>
 
-              <Icon size="20" name="mdi:package-variant" :title="'Items'" />
-              <span>{{islandDetails.items?.join(', ') || "Unknown"}}</span>
+              <img v-if="islandDetails.items?.length > 0" src="/icons/package.svg" :title="'Items'" class="size-5" />
+              <span v-if="islandDetails.items?.length > 0">{{islandDetails.items?.join(',')}}</span>
 
-              <Icon size="20" name="mdi:paw" :title="'Animals'" />
-              <span>{{islandDetails.animals?.join(', ') || "Unknown"}}</span>
+              <img v-if="islandDetails.animals?.length > 0" src="/icons/paw.svg" :title="'Animals'" class="size-5" />
+              <span v-if="islandDetails.animals?.length > 0">{{islandDetails.animals?.join(',')}}</span>
 
-              <Icon size="20" name="mdi:treasure-chest" :title="'Chest Items'" />
-              <span>{{islandDetails.chestItems?.join(', ') || "Unknown"}}</span>
+              <img v-if="islandDetails.chestItems?.length > 0" src="/icons/treasure.svg" :title="'Chest Items'" class="size-5" />
+              <span v-if="islandDetails.chestItems?.length > 0">{{islandDetails.chestItems?.join(',')}}</span>
             </div>
           </template>
 
