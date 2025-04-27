@@ -37,10 +37,10 @@
               <span title="Y Coordinate">Y</span>
               <span>{{islandDetails.yCoordinate || "Unknown"}}</span> -->
 
-              <img src="/icons/databank.svg" :title="'Databanks'" class="size-5" />
+              <img src="/icons/brain.svg" :title="'Databanks'" class="size-5" />
               <span>{{islandDetails.databanks || "Unknown"}}</span>
 
-              <img src="/icons/ark.svg" :title="'Ark'" class="size-5" />
+              <span title="Ark">Ark</span>
               <span>{{islandHasArk}}</span>
 
               <img src="/icons/altitude.svg" :title="'Altitude'" class="size-5" />
